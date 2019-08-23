@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body>
+        <div class="controller">
+            <h1> Form Validation</h1>
+            <form name="myform">
+                <p> Name:</p>
+                <input type="text" placeholder="name" autofocus>
+                <span class="error" ng-show="myform.name.$invalid">please enter input value</span>
+
+                <p> city:</p>
+                <input type ="text" placeholder="city" >
+                <span class="error"> please enter city name</span>
+
+                <p>Number:</p>
+                <input type="number" placeholder="pincode">
+                <span class="error"> enter correct pincode </span>
+ 
+<button type="submit" class="btn">submit</button>
+            </form>
+            </body>
+</html>
